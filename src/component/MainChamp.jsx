@@ -32,7 +32,7 @@ export default function MainPage() {
             return (
                 <div key={championId} className="flex-shrink-0 group py-1">
                   <img className="w-[180px] h-[290px]" src={imageUrl} alt={champion.name} />
-                  <p className="font-mono text-lg font-black pl-5 group-hover:pl-8 bg-[#061C25] group-hover:bg-[#006680] duration-300 text-white p-2">{champion.name}</p>
+                  <p className="font-mono text-lg font-black pl-5 group-hover:pl-7 bg-[#061C25] group-hover:bg-[#006680] duration-300 text-white p-2">{champion.name}</p>
                 </div>
             );
           })}

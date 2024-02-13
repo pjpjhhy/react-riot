@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Layout from "../component/Layout";
+import { Link } from "react-router-dom";
 
 export default function MainPage() {
   const [data, setData] = useState();
@@ -27,17 +28,18 @@ export default function MainPage() {
             const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championId}_0.jpg`;
 
             return (
-              <div className="group overflow-hidden relative shadow-xl" key={championId}>
-                <img
-                  style={{ clipPath: "polygon(0 0, 87% 0, 100% 7%, 100% 100%, 0 100%, 0% 50%)" }}
-                  className="w-full h-[415px] object-cover duration-300 transform group-hover:scale-110 group-hover:pb-[12px]"
+              <Link to= {`/champdetail/${champion.id}`}><div className="group overflow-hidden relative shadow-xl" key={championId}>
+             <img
+                  className="w-full h-[415px] object-cover duration-300 transform group-hover:scale-105"
                   src={imageUrl}
                   alt={champion.name}
+                  onMouseOver={(e) => e.currentTarget.style.clipPath = 'none'}
+                  onMouseOut={(e) => e.currentTarget.style.clipPath = 'polygon(0 0, 87% 0, 100% 7%, 100% 100%, 0 100%, 0% 50%)'}
                 />
                 <p className="absolute bottom-0 left-0 right-0 p-5 font-mono text-lg font-black pl-5 group-hover:pl-8 text-white bg-[#061C25] group-hover:bg-[#006680] duration-300">
                   {champion.name}
                 </p>
-              </div>
+              </div></Link>
             );
           })}
         </div>
