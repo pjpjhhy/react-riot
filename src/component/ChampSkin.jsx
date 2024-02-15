@@ -1,39 +1,40 @@
-import React from 'react'
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 export default function ChampSkin() {
-    const [data, setData] = useState();
+  const [championData, setChampionData] = useState({});
+  const { id } = useParams();
 
-    useEffect(() => {
-      const url = "https://ddragon.leagueoflegends.com/cdn/14.3.1/data/ko_KR/champion.json";
-  
-      fetch(url)
-        .then((res) => res.json())
-        .then((jsonData) => {
-          setData(jsonData.data);
-        })
-        .catch((error) => {
-          console.error('Error fetching champion data:', error);
-        });
-      }, []);
-      console.log(data)
-      
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const url = `https://ddragon.leagueoflegends.com/cdn/14.3.1/data/ko_KR/champion/${id}.json`;
+        const response = await fetch(url);
+        const jsonData = await response.json();
+
+        setChampionData(jsonData.data[id]);
+      } catch (error) {
+        console.error('Error fetching champion data:', error);
+      }
+    };
+
+    fetchData();
+  }, [id]);
+
+  console.log(championData);
+
   return (
-    <div className="w-full flex justify-center py-12">
-    <div className="w-full max-w-7xl grid grid-cols-5 gap-8">
-      {data && Object.keys(data).map(championId => {
-        const champion = data[championId];
-        const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_1.jpg`;
-        return (
-        <div className="group overflow-hidden relative shadow-xl" key={championId}>
+    <div className='w-full flex flex-col justify-center items-center space-y-4'>
+      {championData.skins && championData.skins.map((skin, index) => (
+        <div key={index} className='text-white text-[26px] font-bold'>
+          <div className='pb-1'>{skin.name.replace('default', '기본 스킨')}</div>
           <img
-              src={imageUrl}
-              alt={champion.name}
-            />
-          </div>
-        );
-      })}
+            className='w-[920px] h-[570px]'
+            src={`https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skin.num}.jpg`}
+            alt={`Skin ${skin.num}`}
+          />
+        </div>
+      ))}
     </div>
-  </div>
-  )
+  );
 }
