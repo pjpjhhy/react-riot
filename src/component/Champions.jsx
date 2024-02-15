@@ -3,7 +3,7 @@ import Layout from "../component/Layout";
 import { Link } from "react-router-dom";
 
 export default function MainPage() {
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
 
   useEffect(() => {
     const url = "https://ddragon.leagueoflegends.com/cdn/14.3.1/data/ko_KR/champion.json";
@@ -28,7 +28,7 @@ export default function MainPage() {
             const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championId}_0.jpg`;
 
             return (
-              <Link to= {`/champdetail/${champion.id}`}><div className="group overflow-hidden relative shadow-xl" key={championId}>
+              <Link to={`/champdetail/${championId}`} key={championId}><div className="group overflow-hidden relative shadow-xl" key={championId}>
              <img
                   className="w-full h-[415px] object-cover duration-300 transform group-hover:scale-105"
                   src={imageUrl}
