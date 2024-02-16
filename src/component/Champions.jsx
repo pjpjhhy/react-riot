@@ -30,6 +30,7 @@ export default function MainPage() {
             return (
               <Link to={`/champdetail/${championId}`} key={championId}><div className="group overflow-hidden relative shadow-xl" key={championId}>
              <img
+                  style={{clipPath:'polygon(0 0, 87% 0, 100% 7%, 100% 100%, 0 100%, 0% 50%)'}}
                   className="w-full h-[415px] object-cover duration-300 transform group-hover:scale-105"
                   src={imageUrl}
                   alt={champion.name}

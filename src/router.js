@@ -4,6 +4,8 @@ import NotFound from "./router/NotFound";
 import Champions from "./component/Champions"
 import ChampDetail from "./component/ChampDetail";
 import Items from "./component/Items";
+import Esport from "./component/Esport";
+import Universe from "./component/Universe";
 
 const router = createBrowserRouter([
     {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
         {
           path: "item",
           element: <Items/>
+        },
+        {
+          path: "esport",
+          element: <Esport/>
+        },
+        {
+          path: "universe",
+          element: <Universe/>
         },
       ]
     },

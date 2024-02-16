@@ -66,14 +66,14 @@ export default function ChampDetail() {
                     {championData.passive && (
                       <>
                         <p className='text-[18px] py-1 font-semibold'>패시브 : {championData.passive.name}</p>
-                        <div className='w-[792px] flex space-x-4  bg-opacity-45 bg-slate-900 h-full p-1'>
+                        <div className='w-[792px] flex space-x-4  bg-opacity-55 bg-slate-900 h-full p-1'>
                           <img
                             className='w-[50px] h-[50[px] rounded-lg'
                             src={`https://ddragon.leagueoflegends.com/cdn/14.3.1/img/passive/${championData.passive.image.full}`}
                             alt=""
                           />
                           <div className='text-xs whitespace-pre-wrap flex items-center '>
-                            {championData.passive.description.replace('<br>', ('\n')).replace('<br>', '').replace('<physicalDamage>', '').replace('</physicalDamage>', '').replace('<magicDamage>', '').replace('</magicDamage>', '')}
+                            {championData.passive.description.replaceAll('<br>', '').replaceAll("<font color='#C200E1'>", '').replaceAll("<keywordName>", '').replaceAll("</keywordName>", '').replaceAll("<passive>", '').replaceAll("</passive>", '').replaceAll("<spellName>", '').replaceAll("</spellName>", '').replaceAll("<font color='#cccc00'>", '').replaceAll("<mainText>", '').replaceAll("</mainText>", '').replaceAll("<status>", '').replaceAll("</status>", '').replaceAll("<font color='#BBFFFF'>", '').replaceAll("<font color='#FFF673'>", '').replaceAll("<keywordMajor>", '').replaceAll("<font color='#669900'>", '').replaceAll("<font color='#fe5c50'>", '').replaceAll("<font color='#ee91d7'>", '').replaceAll("<font color='#8484fb'>", '').replaceAll("</keywordMajor>", '').replaceAll("<healing>", '').replaceAll("</healing>", '').replaceAll("<speed>", '').replaceAll("</speed>", '').replaceAll('<physicalDamage>', '').replaceAll('</physicalDamage>', '').replaceAll('<magicDamage>', '').replaceAll('</magicDamage>', '').replaceAll('</font>', '').replaceAll("<font color='#9b0f5f'>", '').replaceAll("<font color='#3458eb'>", '').replaceAll("<font color='#FF9900'>", '')}
                           </div>
                         </div>
                       </>
@@ -83,7 +83,7 @@ export default function ChampDetail() {
                   <div className='flex flex-col space-y-1'>
                     <p className='text-[22px] font-semibold'> 챔피언 스킬</p>
                     {championData.spells.map((spell, index) => (
-                      <div key={index} className='flex space-x-5 bg-opacity-45  bg-slate-900 w-[792px] h-full items-center'>
+                      <div key={index} className='flex space-x-5 bg-opacity-55  bg-slate-900 w-[792px] h-full items-center'>
                         <div className='flex space-x-4 items-center p-2'>
                           {/* 스킬 이미지 */}
                           <div className=''>
@@ -97,7 +97,7 @@ export default function ChampDetail() {
                               {spell.name}
                             </div>
                             <div className='text-[12px] leading-5'>
-                              {spell.description.replace('<br>', '').replace('<br>', '').replace('<br>', '').replace('<br>', '').replace('<br>', '').replace('<br>', '').replace('<br>', '').replace('<br>', '')}
+                              {spell.description.replaceAll('<br>', '').replaceAll('</keywordMajor>', '').replaceAll("<status>", '').replaceAll("<font color='#6655CC'>", '').replaceAll("<font color='#99FF99'>", '').replaceAll("<font color='#FF9900'>", '').replaceAll("</status>", '').replaceAll("<factionIonia1>", '').replaceAll("</factionIonia1>", '').replaceAll("<spellName>", '').replaceAll("</spellName>", '').replaceAll("</passive>", '').replaceAll("<passive>", '').replaceAll("</active>", '').replaceAll("<active>", '').replaceAll("<font color='#FF3300'>", '').replaceAll('</font>', '').replaceAll("<font color='#cd90ee'>", '').replaceAll("<font color='#9b0f5f'>", '').replaceAll("<keywordMajor>", '').replaceAll("<OnHit>", '').replaceAll("</OnHit>", '').replaceAll("<font color='#FFFFFF'>", '').replaceAll("<font color='#00DD33'>", '').replaceAll("<font color='#91d7ee'>", '').replaceAll("<font color='#FFF673'>", '').replaceAll("<font color='#669900'>", '')}
                             </div>
                           </div>
                         </div>

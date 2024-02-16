@@ -27,7 +27,7 @@ export default function Items() {
             <div 
             style={{clipPath: 'polygon(0 0, 89% 0, 100% 23%, 100% 100%, 0 100%, 0% 50%)'}}
             key={key} 
-            className='w-full h-full text-white bg-[#121212] flex'>
+            className='w-full h-full text-white bg-[#161616] flex'>
               <img 
               className='w-[90px] h-[90px]'
               src={`https://ddragon.leagueoflegends.com/cdn/14.3.1/img/item/${data[key].image.full}`} alt="" />

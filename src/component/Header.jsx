@@ -20,8 +20,8 @@ export default function Header() {
               <Link to="/champion"><p className='hover:border-b-4 rounded-sm border-blue-400 pb-4'>챔피언</p></Link>
               <Link to="/item"><p className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>아이템</p></Link>
               <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>전적검색</p>
-              <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>e-스포츠</p>
-              <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>유니버스</p>
+              <Link to="/esport"><p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>e-스포츠</p></Link>
+              <Link to="/universe"><p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>유니버스</p></Link>
             </div>
           </div>
           {/* 로고 */}
