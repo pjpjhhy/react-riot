@@ -17,8 +17,8 @@ export default function Header() {
             </div>
             <div className='w-full h-full flex justify-center items-center space-x-4 font-semibold pt-5 text-sm'>
               <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>뉴스</p>
-              <Link to="champion"><p className='hover:border-b-4 rounded-sm border-blue-400 pb-4'>챔피언</p></Link>
-              <p className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>아이템</p>
+              <Link to="/champion"><p className='hover:border-b-4 rounded-sm border-blue-400 pb-4'>챔피언</p></Link>
+              <Link to="/item"><p className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>아이템</p></Link>
               <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>전적검색</p>
               <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>e-스포츠</p>
               <p  className='hover:border-b-4 border-blue-400 rounded-sm pb-4'>유니버스</p>

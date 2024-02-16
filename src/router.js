@@ -3,6 +3,7 @@ import Main from "./router/Main";
 import NotFound from "./router/NotFound";
 import Champions from "./component/Champions"
 import ChampDetail from "./component/ChampDetail";
+import Items from "./component/Items";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,11 @@ const router = createBrowserRouter([
         {
           path: "champdetail/:id",
           element: <ChampDetail/>
-      },
+        },
+        {
+          path: "item",
+          element: <Items/>
+        },
       ]
     },
    

@@ -66,7 +66,7 @@ export default function ChampDetail() {
                     {championData.passive && (
                       <>
                         <p className='text-[18px] py-1 font-semibold'>패시브 : {championData.passive.name}</p>
-                        <div className='w-[792px] flex space-x-4 border bg-opacity-45 border-black bg-slate-900 h-full p-1'>
+                        <div className='w-[792px] flex space-x-4  bg-opacity-45 bg-slate-900 h-full p-1'>
                           <img
                             className='w-[50px] h-[50[px] rounded-lg'
                             src={`https://ddragon.leagueoflegends.com/cdn/14.3.1/img/passive/${championData.passive.image.full}`}
@@ -83,7 +83,7 @@ export default function ChampDetail() {
                   <div className='flex flex-col space-y-1'>
                     <p className='text-[22px] font-semibold'> 챔피언 스킬</p>
                     {championData.spells.map((spell, index) => (
-                      <div key={index} className='flex space-x-5 border bg-opacity-45 border-black bg-slate-900 w-fit h-full items-center'>
+                      <div key={index} className='flex space-x-5 bg-opacity-45  bg-slate-900 w-[792px] h-full items-center'>
                         <div className='flex space-x-4 items-center p-2'>
                           {/* 스킬 이미지 */}
                           <div className=''>
@@ -114,7 +114,7 @@ export default function ChampDetail() {
         </div>
       </div>
         {/* champ skins */}
-          <div className='w-full py-1 bg-[#0B0908] flex justify-center items-center'>
+          <div className='w-full py-1 bg-[#060505] flex justify-center items-center'>
            <ChampSkin/>
           </div>
       </>
