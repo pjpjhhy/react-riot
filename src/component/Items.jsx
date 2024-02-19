@@ -21,8 +21,23 @@ export default function Items() {
 
   return (
     <Layout>
-      <div className='w-full py-14 flex justify-center bg-[#060606]'>
-        <div className='w-full max-w-[1300px] grid grid-cols-5 gap-6'>
+      <div className='w-full py-10 flex flex-col items-center justify-center bg-[#060606]'>
+         {/* header */}
+         <div 
+            style={{clipPath: `polygon(0 0, 97.5% 0, 100% 32%, 100% 100%, 0 100%, 0% 50%)`}}
+            className='w-full max-w-[1600px] bg-[#061C25] justify-center flex'>
+                <div className='w-full flex items-center p-4 text-white'>
+                    {/* title */}
+                    <div className='w-[24%] border-r text-[40px] font-black border-white'>
+                        <p className='float-right pr-12'>아이템</p>
+                    </div>
+                    {/* description */}
+                    <div className='w-[76%] text-[17px] pl-12'>
+                        <p>리그 오브 레전드 게임의 다양한 아이템</p>
+                    </div>
+                </div>
+            </div>
+        <div className='w-full max-w-[1300px] pt-[60px] grid grid-cols-5 gap-6'>
           {Object.keys(data).map((key) => (
             <div 
             style={{clipPath: 'polygon(0 0, 89% 0, 100% 23%, 100% 100%, 0 100%, 0% 50%)'}}

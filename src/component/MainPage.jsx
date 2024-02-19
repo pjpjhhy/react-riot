@@ -1,5 +1,6 @@
 import React from 'react'
 import MainChamp from '../component/MainChamp'
+import News from './News'
 
 
 export default function () {
@@ -15,10 +16,9 @@ export default function () {
         </div>
         {/* imageword */}
       </div>
-      {/* main video */}
-      <div className='w-full max-w-7xl py-12'>
-
-      </div>
+      {/* main news */}
+      <News/>
+     {/* mainchamp */}
       <MainChamp/>
     </div>
   )
