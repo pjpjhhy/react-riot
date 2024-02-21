@@ -19,13 +19,13 @@ export default function MainPage() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center py-2 space-y-2">
+    <div className="w-full flex justify-center py-12 space-y-2">
      <div className="w-full max-w-7xl flex flex-col justify-center space-y-2 items-center">
        <div className="w-full flex">
         <h1 className="font-black text-4xl flex">챔피언</h1>
        </div>
        <Link to="champion"><div className="flex gap-5 overflow-x-auto w-[1250px]">
-          {data && Object.keys(data).slice(0, 35).map(championId => {
+          {data && Object.keys(data).map(championId => {
             const champion = data[championId];
             const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${championId}_0.jpg`;
 

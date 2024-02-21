@@ -38,9 +38,9 @@ export default function ChampDetail() {
           />
         </div>
         {/* champ info */}
-        <div className='absolute flex w-full max-w-7xl  '>
+        <div className='absolute flex w-full max-w-7xl'>
           {/* image */}
-          <div className='w-full flex pt-[50px]'>
+          <div className='w-full flex pt-[50px] '>
             {Object.keys(championData).length > 0 ? (
               <>
                 <img

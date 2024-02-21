@@ -24,7 +24,7 @@ export default function Esport() {
         {/* news info */}
         <div className='w-full flex justify-center py-10'>
             <div className='w-full max-w-7xl flex justify-center pb-[100px] '>
-               <div className='grid grid-cols-3 gap-x-[100px] gap-y-[140px]'>
+               <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  gap-x-[100px] gap-y-[140px]'>
                     <div className='flex flex-col w-[425px] h-[340px] cursor-pointer'>
                         {/* news img */}
                         <div className='w-full h-3/4 overflow-hidden'>

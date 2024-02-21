@@ -4,13 +4,13 @@ export default function TrueDamage() {
   return (
     <>
      {/* pentakill band */}
-     <div className='flex flex-col w-full justify-center items-center py-14'>
+     <div className='flex flex-col group w-full justify-center items-center py-14'>
                     {/* left: image */}
                     <div className='w-full h-full flex flex-col space-y-3'>
                         <div className='text-[31px] font-black flex'>
                             <div className='flex flex-col items-center'>
                                     <img 
-                                    className='w-[250px] h-[60px]'
+                                    className='w-[250px] h-[60px] group-hover:scale-110 duration-300'
                                     src="https://i.namu.wiki/i/8x9eHWw0bP7axdLuAhtN6gzyBexd6D_Oaze97p9wT9iHhx31_Vr-RDSMvwwwW954EDqAhSVqb3dtqCzYr4FG4qdNiKyQPLlJXnv4uwOrpR5zHTO2Qe607RRBV9l4KqppdVngDlYZRsdV9qt59Pa3qg.svg" alt="" />
                                     <p className='w-fit pt-1 bg-gradient-to-r bg-clip-text from-blue-600 to-orange-600 text-transparent'>트루 데미지</p>
                             </div>

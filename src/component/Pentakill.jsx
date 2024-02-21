@@ -4,13 +4,13 @@ export default function Pentakill() {
   return (
     <>
       {/* pentakill band */}
-      <div className='flex flex-col w-full justify-center items-center'>
+      <div className='flex flex-col group w-full justify-center items-center'>
                     {/* left: image */}
                     <div className='w-full h-full flex flex-col space-y-3'>
                         <div className='text-[29px] font-black flex'>
                             <div className='flex flex-col items-center'>
                                     <img 
-                                    className='w-[250px] h-[60px]'
+                                    className='w-[250px] h-[60px] group-hover:scale-110 duration-300'
                                     src="https://i.namu.wiki/i/JauvSC7K5Au--lc0WH8ONNZT0em1L9EC-eHUhQzMbXZGgDKEFkCfOqJ4kbqUQ8kgA815BHa0WEX1Dpa6tRNMvCme6L_pzOMDGNokzM9_OBJ8IP8Jxd0UF4SqnZKT0UFCsItdtN2y_WEGkP09RyiHKw.svg" alt="" />
                                     <p className='w-fit bg-gradient-to-b bg-clip-text from-black to-red-700 text-transparent'>펜타킬 밴드</p>
                             </div>

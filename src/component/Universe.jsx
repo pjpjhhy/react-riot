@@ -8,7 +8,7 @@ import HeartSteel from './HeartSteel'
 export default function Universe() {
   return (
     <Layout>
-        <div className='w-full flex flex-col items-center justify-center space-y-[100px] py-10 '>
+        <div className='w-full flex flex-col items-center justify-center space-y-[65px] py-10 '>
            {/* header */}
            <div 
             style={{clipPath: `polygon(0 0, 97.5% 0, 100% 32%, 100% 100%, 0 100%, 0% 50%)`}}

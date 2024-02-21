@@ -37,7 +37,7 @@ export default function Items() {
                     </div>
                 </div>
             </div>
-        <div className='w-full max-w-[1300px] pt-[60px] grid grid-cols-5 gap-6'>
+        <div className='w-full max-w-[1300px] pt-[60px] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>
           {Object.keys(data).map((key) => (
             <div 
             style={{clipPath: 'polygon(0 0, 89% 0, 100% 23%, 100% 100%, 0 100%, 0% 50%)'}}

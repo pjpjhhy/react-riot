@@ -1,0 +1,12 @@
+
+
+
+.champ-image {
+    opacity: 0.6;
+    transition: opacity 0.6s ease-in-out;
+     box-shadow: 0 2px 9px rgba(255, 255, 255, 0.8);
+  }
+  
+  .champ-image:hover {
+    opacity: 1.2;
+  }

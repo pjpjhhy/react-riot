@@ -3,7 +3,7 @@ import React from 'react'
 export default function HeartSteel() {
   return (
     <>
-    <div className='float-right'>
+    <div className='float-right group'>
          {/* kda group */}
         <div className='flex flex-col w-full justify-center items-center'>
             {/* left: image */}
@@ -12,7 +12,7 @@ export default function HeartSteel() {
                     <div className='text-[32px] float-right font-black flex'>
                         <div className='flex flex-col items-center '>
                             <img 
-                            className='w-[220px] h-[58px]'
+                            className='w-[220px] h-[58px] group-hover:scale-110 duration-300'
                             src="https://i.namu.wiki/i/7MaodsVcK-Im7sOTOdxTgq22zbZl2RvEjqKHPUtQdpUgJ2PjKjPq_xhlM1iiM3jA_-gc_q3pdFeKTtvnLs5IRATbajZdnBVY8JoQilolh7QosKM9UIxHTPKSNsOgT8Fx8Z5ZmAApjDPdThAFj9NPbw.svg" alt="" />
                             <p className='w-fit bg-gradient-to-b bg-clip-text from-green-600 to-purple-500 text-transparent'>하트스틸 그룹</p>
                         </div>
