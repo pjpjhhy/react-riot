@@ -11,7 +11,7 @@ export default function Pentakill() {
                             <div className='flex flex-col items-center'>
                                     <img 
                                     className='w-[250px] h-[60px] group-hover:scale-110 duration-300'
-                                    src="https://i.namu.wiki/i/JauvSC7K5Au--lc0WH8ONNZT0em1L9EC-eHUhQzMbXZGgDKEFkCfOqJ4kbqUQ8kgA815BHa0WEX1Dpa6tRNMvCme6L_pzOMDGNokzM9_OBJ8IP8Jxd0UF4SqnZKT0UFCsItdtN2y_WEGkP09RyiHKw.svg" alt="" />
+                                    src="https://i.namu.wiki/i/wLLaJ3NqejNpfEYlLvqVw5y_ANlu3dFdcpbmzPnmxk9v3ObJX-Wt6eSHMWIBemnZUeAQA8cVe0Acjhu9pHHgzgl5WC56devLuVKIO1ykK1C7f30AvYvo8aubG-5nCqvfEOPec36WNvT1ljqr1mifBg.svg" alt="" />
                                     <p className='w-fit bg-gradient-to-b bg-clip-text from-black to-red-700 text-transparent'>펜타킬 밴드</p>
                             </div>
                         </div>

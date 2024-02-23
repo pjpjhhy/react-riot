@@ -13,7 +13,7 @@ export default function Kda() {
                             <div className='flex flex-col items-center '>
                                 <img 
                                 className='w-[210px] h-[55px] group-hover:scale-110 duration-300'
-                                src="https://i.namu.wiki/i/jyivQQdds0n-93WfnV_apKWOPf3MBsVgIrVLJeASzN2_07cgjVEGebrz0rM4m_9hxqMg3H8_h_mr5Gtys6Cj-hOqJoPncEsLQUK5c-63maaz77VpcRODt9Y4K9jD2I3U0yZaths-ZX8wVdnyeun2Hg.svg" alt="" />
+                                src="https://i.namu.wiki/i/GUSNbz_pKb_7DN_TS12m3OD1aWyiYpgqq2ICsgX-Lsp9Uq2nmOgj0eBcXYX2TJGEgw4mm1ad9HTZxSz9GPytkTExekgbvIKd4UPMlk_j2Msond_MMO-dVcyFwG0QgHauQEjQRHbrrmnN41F2JgbzMQ.svg" alt="" />
                                 <p className='w-fit pt-1 bg-gradient-to-b bg-clip-text from-blue-500 to-blue-100 text-transparent'>K/DA 그룹</p>
                             </div>
                         </div>

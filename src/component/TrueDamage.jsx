@@ -11,7 +11,7 @@ export default function TrueDamage() {
                             <div className='flex flex-col items-center'>
                                     <img 
                                     className='w-[250px] h-[60px] group-hover:scale-110 duration-300'
-                                    src="https://i.namu.wiki/i/8x9eHWw0bP7axdLuAhtN6gzyBexd6D_Oaze97p9wT9iHhx31_Vr-RDSMvwwwW954EDqAhSVqb3dtqCzYr4FG4qdNiKyQPLlJXnv4uwOrpR5zHTO2Qe607RRBV9l4KqppdVngDlYZRsdV9qt59Pa3qg.svg" alt="" />
+                                    src="https://i.namu.wiki/i/GzA5uLTc8c7FnSYHjwvSpDcaZX7CmXyJ4eEIipdjLH94f85MFwwuqF0pYhnEfpNYwK8loMJY8m19WLGSeWFg71346fA4Qg3GzcJlHaAmnUPxkxq2L4zX6otubuU3SpYPFQrq3VSkp-H7eYmVxyU4NA.svg" alt="" />
                                     <p className='w-fit pt-1 bg-gradient-to-r bg-clip-text from-blue-600 to-orange-600 text-transparent'>트루 데미지</p>
                             </div>
                         </div>
